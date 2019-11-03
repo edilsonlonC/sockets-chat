@@ -30,7 +30,7 @@ class Usuarios {
     getPersonasPorSala(sala) {
 
         let personasEnSala= this.personas.filter(persona => persona.sala === sala)
-        console.log('personas en sala ',personasEnSala);
+        
         
         
         return personasEnSala;
@@ -42,7 +42,7 @@ class Usuarios {
         this.personas =  this.personas.filter( persona => {
             return persona.id != id
         })
-        console.log('persona borrada ' ,personaBorrada);
+
         
         return personaBorrada
     }
